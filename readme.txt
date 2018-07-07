@@ -2,7 +2,8 @@
 #Qeyd
 kitabxananı istifadə etməmişdən öncə pipeline.config faylını notepad++ ilə açın və aşağıdakı sətirlərdə dəyişiklik edin
 1. 109 cu sətrdə qeyd olunan fine_tune_checkpoint: "C:/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
-qovluğ yolunu tensorflo yüklədiyiniz ünvanla eyniləşdirin.yuxarıdakı sətirdə C:/models/research/object_detection -şəxsi kompyuterimdə C-yə yüklədiyim üçün nümunə olaraq göstərmişəm.
+qovluğ yolunu tensorflo yüklədiyiniz ünvanla eyniləşdirin.yuxarıdakı sətirdə C:/models/research/object_detection 
+-şəxsi kompyuterimdə C-yə yüklədiyim üçün nümunə olaraq göstərmişəm.
 
 2. 114 cü sətirdə də həmçinin qovluğ yolunu təyin olunan yerə uyğun dəyişin
 label_map_path: "C:/models/research/object_detection/training/labelmap.pbtxt"
