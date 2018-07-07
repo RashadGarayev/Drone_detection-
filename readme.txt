@@ -25,7 +25,7 @@ CWD_PATH = os.getcwd()
 # for drone detection.
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
 
-# training qovluğu
+# training 
 PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 
 # Path to image
