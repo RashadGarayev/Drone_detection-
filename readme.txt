@@ -1,5 +1,35 @@
 # Drone_detection-
+#Qeyd
+kitabxananı istifadə etməmişdən öncə pipeline.config faylını notepad++ ilə açın və aşağıdakı sətirlərdə dəyişiklik edin
+1. 109 cu sətrdə qeyd olunan fine_tune_checkpoint: "C:/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
+qovluğ yolunu tensorflo yüklədiyiniz ünvanla eyniləşdirin.yuxarıdakı sətirdə C:/models/research/object_detection -şəxsi kompyuterimdə C-yə yüklədiyim üçün nümunə olaraq göstərmişəm.
 
+2. 114 cü sətirdə də həmçinin qovluğ yolunu təyin olunan yerə uyğun dəyişin
+label_map_path: "C:/models/research/object_detection/training/labelmap.pbtxt"
+
+3.Dəyişiklik edəcəyiniz digər sətrlər
+
+116-cı sətr   input_path: "C:/models/research/object_detection/train.record"
+
+125 ci sətr   label_map_path: "C:/models/research/object_detection/training/labelmap.pbtxt"
+
+və son olaraq 
+
+129cu sətr
+
+tf_record_input_reader {
+    input_path: "C:/models/research/object_detection/test.record"
+  }
+
+
+
+
+
+
+Aşağıda göstərilən .py faylında kitabxananı istifadə üçün 46-cı sətrdə inference_graph olaraq yazılıq.(dronları təyin etmək üçün kitabxanadır)
+47-ci sətrdə göstərilən test_drone.jpg faylı isə sizin əlavə edəcəyiniz rəsmdir-nümunə üçün göstərilib
+58-ci sətrdə qeyd olunan labelmap.pbtxt faylı training qovluğundadır.training qovluğunu object_detection qovluğuna çıxarın-kitabxana daxilində olmamalıdır
+65-ci sətrdə qeyd olunan NUM_Classes 1 olaraq qalacaq,çünki təyin edəcəyimiz obyekt sadəcə drondur
 
 import os
 import cv2
