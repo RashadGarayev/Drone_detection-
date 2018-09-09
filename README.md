@@ -1,6 +1,6 @@
 <p>
 
-# Drone_detection-
+<p><strong>Drone_detection-</strong></p>
 #Qeyd
 kitabxananı istifadə etməmişdən öncə pipeline.config faylını notepad++ ilə açın və aşağıdakı sətirlərdə dəyişiklik edin
 1. 109 cu sətrdə qeyd olunan fine_tune_checkpoint: "C:/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
