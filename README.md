@@ -1,7 +1,7 @@
 
 
-#Drone_detection
-<h1
+Drone_detection
+
 kitabxananı istifadə etməmişdən öncə pipeline.config faylını notepad++ ilə açın və aşağıdakı sətirlərdə dəyişiklik edin
 1. 109 cu sətrdə qeyd olunan fine_tune_checkpoint: "C:/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
 qovluğ yolunu tensorflo yüklədiyiniz ünvanla eyniləşdirin.yuxarıdakı sətirdə C:/models/research/object_detection 
@@ -69,4 +69,4 @@ PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 # Number of classes the object detector can identify
 NUM_CLASSES = 1
 
-</p>
+
